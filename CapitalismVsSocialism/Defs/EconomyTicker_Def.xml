@@ -1,0 +1,9 @@
+<Defs>
+	<GameComponentDefs>
+		<GameComponentDef>
+			<defName>EconomyTicker</defName>
+			<modContentPack>CapitalismVsSocialism</modContentPack>
+			<componentClass>CapitalismVsSocialism.EconomyTicker</componentClass>
+		</GameComponentDef>
+	</GameComponentDefs>
+</Defs>

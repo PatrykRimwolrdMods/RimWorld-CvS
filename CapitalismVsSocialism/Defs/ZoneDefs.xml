@@ -1,0 +1,9 @@
+<Defs>
+    <ZoneDef>
+        <defName>BankVaultZone</defName>
+        <label>Bankowy Skarbiec</label>
+        <description>Specjalny magazyn, w którym przechowywane jest srebro należące do Banku Narodowego.</description>
+        <designationCategory>Zone</designationCategory>
+        <zoneClass>CapitalismVsSocialism.StockpileZone_BankVault</zoneClass>
+    </ZoneDef>
+</Defs>

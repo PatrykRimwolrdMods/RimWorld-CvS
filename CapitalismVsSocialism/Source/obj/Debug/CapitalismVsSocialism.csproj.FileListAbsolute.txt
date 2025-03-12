@@ -1,0 +1,9 @@
+D:\Games\RimWorld\Mods\CapitalismVsSocialism\Source\CapitalismVsSocialism\CapitalismVsSocialism\obj\Debug\CapitalismVsSocialism.csproj.AssemblyReference.cache
+D:\Games\RimWorld\Mods\CapitalismVsSocialism\Source\CapitalismVsSocialism\CapitalismVsSocialism\obj\Debug\CapitalismVsSocialism.csproj.CoreCompileInputs.cache
+D:\Games\RimWorld\Mods\CapitalismVsSocialism\Assemblies\CapitalismVsSocialism.dll
+D:\Games\RimWorld\Mods\CapitalismVsSocialism\Assemblies\CapitalismVsSocialism.pdb
+D:\Games\RimWorld\Mods\CapitalismVsSocialism\Source\obj\Debug\CapitalismVsSocialism.csproj.AssemblyReference.cache
+D:\Games\RimWorld\Mods\CapitalismVsSocialism\Source\obj\Debug\CapitalismVsSocialism.csproj.CoreCompileInputs.cache
+D:\Games\RimWorld\Mods\CapitalismVsSocialism\Source\obj\Debug\Capitali.BCB25904.Up2Date
+D:\Games\RimWorld\Mods\CapitalismVsSocialism\Source\obj\Debug\CapitalismVsSocialism.dll
+D:\Games\RimWorld\Mods\CapitalismVsSocialism\Source\obj\Debug\CapitalismVsSocialism.pdb

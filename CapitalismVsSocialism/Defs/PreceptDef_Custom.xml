@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+      <defName>NoMinimumWage_Issue</defName>
+      <label>Capitalism</label>
+      <iconPath>UI/Issues/Ranching</iconPath>
+   </IssueDef>
+   
+   <IssueDef>
+      <defName>LandOwnership_Issue</defName>
+      <label>Capitalism</label>
+      <iconPath>UI/Icons/Precepts/LandOwnership</iconPath>
+   </IssueDef>
+   
+   <IssueDef>
+      <defName>FreeMarket_Issue</defName>
+      <label>Capitalism</label>
+      <iconPath>UI/Icons/Precepts/FreeMarket</iconPath>
+   </IssueDef>
+  
+    <IssueDef>
+      <defName>OvertimeWork_Issue</defName>
+      <label>Capitalism</label>
+      <iconPath>UI/Icons/Precepts/OvertimeWork</iconPath>
+   </IssueDef>
+   
+    <IssueDef>
+      <defName>PrivateHealthcare_Issue</defName>
+      <label>Capitalism</label>
+      <iconPath>UI/Icons/Precepts/PrivateHealthcare</iconPath>
+	</IssueDef>
+	
+	<IssueDef>
+      <defName>WealthMatters_Issue</defName>
+      <label>Capitalism</label>
+      <iconPath>UI/Icons/Precepts/WealthMatters</iconPath>
+	</IssueDef>
+	
+	<IssueDef>
+      <defName>NoPrivateProperty_Issue</defName>
+      <label>Socialism</label>
+      <iconPath>UI/Icons/Precepts/NoPrivateProperty</iconPath>
+	</IssueDef>
+	
+	<IssueDef>
+      <defName>UniversalHealthcare_Issue</defName>
+      <label>Socialism</label>
+      <iconPath>UI/Icons/Precepts/UniversalHealthcare</iconPath>
+	</IssueDef>
+		
+	<IssueDef>
+      <defName>PlannedEconomy_Issue</defName>
+      <label>Socialism</label>
+      <iconPath>UI/Icons/Precepts/PlannedEconomy</iconPath>
+	</IssueDef>
+	
+	<IssueDef>
+      <defName>WealthRedistribution_Issue</defName>
+      <label>Socialism</label>
+      <iconPath>UI/Icons/Precepts/WealthRedistribution</iconPath>
+	</IssueDef>
+	
+	<IssueDef>
+      <defName>CollectiveOwnership_Issue</defName>
+      <label>Socialism</label>
+      <iconPath>UI/Icons/Precepts/CollectiveOwnership</iconPath>
+	</IssueDef>
+	
+	<IssueDef>
+      <defName>BlackMarket_Issue</defName>
+      <label>Socialism</label>
+      <iconPath>UI/Icons/Precepts/BlackMarket</iconPath>
+	</IssueDef>
+	
+
+<PreceptDef>
+	  <defName>Precept_NoMinimumWage</defName>
+      <issue>NoMinimumWage_Issue</issue>
+      <label>Brak Płacy Minimalnej</label>
+      <description>Płace są ustalane przez rynek, co może prowadzić do nierówności dochodowych.</description>
+      <iconPath>UI/Icons/Precepts/NoMinimumWage</iconPath>
+      <impact>3</impact>
+		<associatedMemes>
+			<li>Meme_Capitalism</li>
+		</associatedMemes>
+   </PreceptDef>
+   
+   <PreceptDef>
+	  <defName>Precept_LandOwnership</defName>
+      <issue>LandOwnership_Issue</issue>
+      <label>Własność Prywatna Ziemi</label>
+      <description>Koloniści mogą posiadać i sprzedawać nieruchomości.</description>
+      <iconPath>UI/Icons/Precepts/LandOwnership</iconPath>
+      <impact>2</impact>
+		<associatedMemes>
+			<li>Meme_Capitalism</li>
+		</associatedMemes>
+   </PreceptDef>
+   
+   <PreceptDef>
+	  <defName>Precept_FreeMarket</defName>
+      <issue>FreeMarket_Issue</issue>
+      <label>Wolny Rynek</label>
+      <description>Brak regulacji cen powoduje swobodne wahania na rynku.</description>
+      <iconPath>UI/Icons/Precepts/FreeMarket</iconPath>
+      <impact>3</impact>
+		<associatedMemes>
+			<li>Meme_Capitalism</li>
+		</associatedMemes>
+   </PreceptDef>
+   
+   <PreceptDef>
+	  <defName>Precept_OvertimeWork</defName>
+      <issue>OvertimeWork_Issue</issue>
+      <label>Praca Ponad Siły</label>
+      <description>Koloniści mogą pracować dłużej, ale są bardziej podatni na wypalenie zawodowe.</description>
+      <iconPath>UI/Icons/Precepts/OvertimeWork</iconPath>
+      <impact>2</impact>
+		<associatedMemes>
+			<li>Meme_Capitalism</li>
+		</associatedMemes>
+   </PreceptDef>
+   
+   <PreceptDef>
+	  <defName>Precept_PrivateHealthcare</defName>
+      <issue>PrivateHealthcare_Issue</issue>
+      <label>Prywatne Usługi Zdrowotne</label>
+      <description>Koloniści muszą płacić za leczenie, co może prowadzić do wykluczenia biedniejszych.</description>
+      <iconPath>UI/Icons/Precepts/PrivateHealthcare</iconPath>
+      <impact>3</impact>
+		<associatedMemes>
+			<li>Meme_Capitalism</li>
+		</associatedMemes>
+   </PreceptDef>
+   
+   <PreceptDef>
+	  <defName>Precept_WealthMatters</defName>
+      <issue>WealthMatters_Issue</issue>
+      <label>Wealth Equals Success</label>
+      <description>Your value is measured by your possessions.</description>
+      <iconPath>UI/Icons/Precepts/WealthMatters</iconPath>
+      <impact>2</impact>
+		<associatedMemes>
+			<li>Meme_Capitalism</li>
+		</associatedMemes>
+   </PreceptDef>
+   
+   <PreceptDef>
+	  <defName>Precept_NoPrivateProperty</defName>
+      <issue>NoPrivateProperty_Issue</issue>
+      <label>Zakaz Własności Prywatnej</label>
+      <description>Wszystkie zasoby są własnością wspólną.</description>
+      <iconPath>UI/Icons/Precepts/NoPrivateProperty</iconPath>
+      <impact>3</impact>
+		<associatedMemes>
+			<li>Meme_Socialism</li>
+		</associatedMemes>
+   </PreceptDef>
+   
+   <PreceptDef>
+	  <defName>Precept_UniversalHealthcare</defName>
+      <issue>UniversalHealthcare_Issue</issue>
+      <label>Darmowe Leczenie</label>
+      <description>Każdy mieszkaniec otrzymuje bezpłatną opiekę zdrowotną.</description>
+      <iconPath>UI/Icons/Precepts/UniversalHealthcare</iconPath>
+      <impact>3</impact>
+		<associatedMemes>
+			<li>Meme_Socialism</li>
+		</associatedMemes>
+   </PreceptDef>
+   
+   <PreceptDef>
+	  <defName>Precept_PlannedEconomy</defName>
+      <issue>PlannedEconomy_Issue</issue>
+      <label>Gospodarka Planowana</label>
+      <description>Wszystkie zasoby są centralnie zarządzane.</description>
+      <iconPath>UI/Icons/Precepts/PlannedEconomy</iconPath>
+      <impact>3</impact>
+		<associatedMemes>
+			<li>Meme_Socialism</li>
+		</associatedMemes>
+   </PreceptDef>
+   
+   <PreceptDef>
+	  <defName>Precept_WealthRedistribution</defName>
+      <issue>WealthRedistribution_Issue</issue>
+      <label>Podział Dobrobytu</label>
+      <description>Nadwyżka bogactwa jest przekazywana na potrzeby wspólne.</description>
+      <iconPath>UI/Icons/Precepts/WealthRedistribution</iconPath>
+      <impact>2</impact>
+		<associatedMemes>
+			<li>Meme_Socialism</li>
+		</associatedMemes>
+   </PreceptDef>
+   
+   <PreceptDef>
+	  <defName>Precept_CollectiveOwnership</defName>
+      <issue>CollectiveOwnership_Issue</issue>
+      <label>Collective Ownership</label>
+      <description>Resources belong to everyone. Private property is theft.</description>
+      <iconPath>UI/Icons/Precepts/CollectiveOwnership</iconPath>
+      <impact>3</impact>
+		<associatedMemes>
+			<li>Meme_Socialism</li>
+		</associatedMemes>
+   </PreceptDef>
+   
+   <PreceptDef>
+	  <defName>Precept_BlackMarket</defName>
+      <issue>BlackMarket_Issue</issue>
+      <label>Czarny Rynek</label>
+      <description>Nielegalny handel prosperuje poza kontrolą władz.</description>
+      <iconPath>UI/Icons/Precepts/BlackMarket</iconPath>
+      <impact>3</impact>
+		<associatedMemes>
+			<li>Meme_Socialism</li>
+		</associatedMemes>
+   </PreceptDef>
+   
+   <PreceptDef>
+    <defName>Precept_PersonalSavings</defName>
+	<issue>BlackMarket_Issue</issue>
+    <label>Personal Savings</label>
+    <description>Pawns can save money for personal use.</description>
+	 <iconPath>UI/Icons/Precepts/PersonalSavings</iconPath>
+	 <impact>1</impact>
+		<associatedMemes>
+			<li>Meme_Socialism</li>
+			<li>Meme_Capitalism</li>
+		</associatedMemes>
+	
+</PreceptDef>
+   
+  
+</Defs>

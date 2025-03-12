@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Defs>
+   <MemeDef>
+      <defName>Meme_Capitalism</defName>
+      <label>capitalism</label>
+      <description>A society where wealth, private property, and competition define progress. Work ethic is sacred.</description>
+      <iconPath>UI/Icons/Memes/Capitalism</iconPath>
+      <groupDef>Misc</groupDef>
+      <impact>2</impact>
+      <renderOrder>80</renderOrder>
+      <exclusionTags>
+         <li>Equality</li>
+         <li>Collectivism</li>
+      </exclusionTags>
+      <consumableBuildings>
+         <li>CommsConsole</li>
+      </consumableBuildings>
+   <requireOne>
+		<li>
+			<li>Precept_NoMinimumWage</li>
+		</li>
+		<li>
+			<li>Precept_LandOwnership</li>
+		</li>
+		<li>
+			<li>Precept_FreeMarket</li>
+		</li>
+		<li>
+			<li>Precept_PrivateHealthcare</li>
+		</li>
+		<li>
+			<li>Precept_WealthMatters</li>
+		</li>
+		<li>
+			<li>Precept_PersonalSavings</li>
+		</li>
+		<li>
+			<li>Precept_OvertimeWork</li>
+		</li>
+		<li>
+			<li>Precept_PersonalSavings</li>
+		</li>
+	
+   </requireOne>
+   </MemeDef>
+
+   <MemeDef>
+      <defName>Meme_Socialism</defName>
+      <label>socialism</label>
+      <description>A society where equality, shared resources, and collective welfare are sacred.</description>
+      <iconPath>UI/Icons/Memes/Socialism</iconPath>
+      <groupDef>Misc</groupDef>
+      <impact>2</impact>
+      <renderOrder>80</renderOrder>
+      <exclusionTags>
+         <li>Individualism</li>
+         <li>Greed</li>
+      </exclusionTags>
+      <consumableBuildings>
+         <li>Table2x2c</li>
+      </consumableBuildings>
+	  <requireOne>
+		<li>
+			<li>Precept_NoPrivateProperty</li>
+		</li>
+		<li>
+			<li>Precept_UniversalHealthcare</li>
+		</li>
+		<li>
+			<li>Precept_PlannedEconomy</li>
+		</li>
+		<li>
+			<li>Precept_CollectiveOwnership</li>
+		</li>
+		<li>
+			<li>Precept_BlackMarket</li>
+		</li>
+		<li>
+			<li>Precept_PersonalSavings</li>
+		</li>
+   </requireOne>
+   </MemeDef>
+</Defs>

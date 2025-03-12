@@ -1,0 +1,10 @@
+<Defs>
+	<Precepts>
+		<PreceptDef>
+			<defName>Capitalism</defName>
+			<label>Kapitalizm</label>
+			<description>System gospodarczy oparty na prywatnej własności środków produkcji.</description>
+			<impact>Medium</impact>
+		</PreceptDef>
+	</Precepts>
+</Defs>
