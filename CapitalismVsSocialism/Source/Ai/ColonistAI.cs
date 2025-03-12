@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace CapitalismVsSocialism.AI
@@ -15,6 +15,12 @@ namespace CapitalismVsSocialism.AI
         public void AddColonist(Colonist colonist)
         {
             colonists.Add(colonist);
+        }
+
+        // Dodajemy metodę GetColonists, aby umożliwić dostęp do listy kolonistów
+        public List<Colonist> GetColonists()
+        {
+            return colonists;
         }
 
         public void UpdateAI()

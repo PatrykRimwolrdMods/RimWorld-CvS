@@ -217,19 +217,5 @@
 		</associatedMemes>
    </PreceptDef>
    
-   <PreceptDef>
-    <defName>Precept_PersonalSavings</defName>
-	<issue>BlackMarket_Issue</issue>
-    <label>Personal Savings</label>
-    <description>Pawns can save money for personal use.</description>
-	 <iconPath>UI/Icons/Precepts/PersonalSavings</iconPath>
-	 <impact>1</impact>
-		<associatedMemes>
-			<li>Meme_Socialism</li>
-			<li>Meme_Capitalism</li>
-		</associatedMemes>
-	
-</PreceptDef>
-   
   
 </Defs>
