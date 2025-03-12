@@ -1,9 +1,0 @@
-<Defs>
-  <MainButtonDef>
-    <defName>NationalBank</defName>
-    <label>🏦 Bank Narodowy</label>
-    <description>Panel zarządzania Bankiem Narodowym</description>
-    <tabWindowClass>CapitalismVsSocialism.MainTabWindow_NationalBank</tabWindowClass>
-    <order>500</order>
-  </MainButtonDef>
-</Defs>
