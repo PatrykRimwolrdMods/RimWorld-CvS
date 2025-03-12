@@ -9,7 +9,7 @@ namespace CapitalismVsSocialism.AI
         public int Energy { get; private set; }
         public int Happiness { get; private set; }
         public string CurrentTask { get; private set; }
-        
+
         public Colonist(string name)
         {
             Name = name;
@@ -21,17 +21,17 @@ namespace CapitalismVsSocialism.AI
 
         public void AdjustHunger(int amount)
         {
-            Hunger = Math.Clamp(Hunger + amount, 0, 100);
+            Hunger = Clamp(Hunger + amount, 0, 100);
         }
 
         public void AdjustEnergy(int amount)
         {
-            Energy = Math.Clamp(Energy + amount, 0, 100);
+            Energy = Clamp(Energy + amount, 0, 100);
         }
 
         public void AdjustHappiness(int amount)
         {
-            Happiness = Math.Clamp(Happiness + amount, 0, 100);
+            Happiness = Clamp(Happiness + amount, 0, 100);
         }
 
         public void SetTask(string task)
@@ -42,6 +42,13 @@ namespace CapitalismVsSocialism.AI
         public override string ToString()
         {
             return $"{Name}: Hunger({Hunger}) Energy({Energy}) Happiness({Happiness}) Task({CurrentTask})";
+        }
+
+        private int Clamp(int value, int min, int max)
+        {
+            if (value < min) return min;
+            if (value > max) return max;
+            return value;
         }
     }
 }
