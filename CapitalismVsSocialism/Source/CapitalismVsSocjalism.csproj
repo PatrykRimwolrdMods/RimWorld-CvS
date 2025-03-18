@@ -62,14 +62,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JobGiver_AutoHarvest.cs" />
-    <Compile Include="ModStartup.cs" />
-    <Compile Include="Patch_ThinkTree.cs" />
+    <Compile Include="CentralBank.cs" />
+    <Compile Include="EntrepreneurAI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AI\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
