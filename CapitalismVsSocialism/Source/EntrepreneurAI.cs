@@ -8,7 +8,7 @@ public class EntrepreneurAI : GameComponent
 {
     public Pawn entrepreneur;
     public List<Pawn> employees = new List<Pawn>();
-    public int salary = 10;
+    public int salary = 10; // Wynagrodzenie w jednostkach jedzenia
     public int rawGraniteWealth = 0;
     public int processedGraniteWealth = 0;
     public bool canProduceBlocks = false;
@@ -17,9 +17,11 @@ public class EntrepreneurAI : GameComponent
     private bool initialized = false;
     private const int StorageSpacing = 3; // Odległość między magazynami
     private const int GraniteConversionRate = 20;
-    private string primaryCurrency = "GraniteChunk";
-    private string advancedCurrency = "BlocksGranite";
-    private const int berryLimit = 100;
+    private string primaryCurrency = "RawBerries"; // Domyślna waluta - jagody
+    private string secondaryCurrency = "Meat"; // Alternatywna waluta - mięso
+    private const int foodLimit = 100; // Limit na jedzenie
+    private int ticksSinceLastJobCheck = 0;
+    private const int JobCheckInterval = 250; // Sprawdzanie zadań co 250 ticków
 
     public EntrepreneurAI(Game game) { }
 
@@ -34,6 +36,7 @@ public class EntrepreneurAI : GameComponent
         Scribe_Values.Look(ref processedGraniteWealth, "processedGraniteWealth", 0);
         Scribe_Values.Look(ref canProduceBlocks, "canProduceBlocks", false);
         Scribe_Values.Look(ref hasFood, "hasFood", false);
+        Scribe_Values.Look(ref ticksSinceLastJobCheck, "ticksSinceLastJobCheck", 0);
     }
 
     public override void GameComponentTick()
@@ -47,7 +50,13 @@ public class EntrepreneurAI : GameComponent
 
         if (entrepreneur != null)
         {
-            ManageBusiness(Find.CurrentMap);
+            // Sprawdzenie zadań tylko co określoną liczbę ticków
+            ticksSinceLastJobCheck++;
+            if (ticksSinceLastJobCheck >= JobCheckInterval)
+            {
+                ManageBusiness(Find.CurrentMap);
+                ticksSinceLastJobCheck = 0;
+            }
         }
     }
 
@@ -140,12 +149,28 @@ public class EntrepreneurAI : GameComponent
             return;
         }
 
+        // Sprawdzenie, czy koloniści są już zajęci zadaniem
+        if (entrepreneur.CurJob != null && entrepreneur.CurJob.def != JobDefOf.Wait && entrepreneur.CurJob.def != JobDefOf.GotoWander && entrepreneur.CurJob.def != JobDefOf.Wait_Wander)
+        {
+            Messages.Message($"[DEBUG] {entrepreneur.Name} jest już zajęty ({entrepreneur.CurJob.def.defName}). Oczekiwanie na zakończenie zadania.", MessageTypeDefOf.NeutralEvent);
+            return;
+        }
+
         Messages.Message($"[DEBUG] {entrepreneur.Name} sprawdza, co ma zrobić.", MessageTypeDefOf.NeutralEvent);
 
-        if (!hasFood)
+        // Sprawdzenie dostępności jedzenia w magazynie
+        if (!CheckFoodAvailability())
         {
             Messages.Message($"[DEBUG] {entrepreneur.Name} szuka pożywienia!", MessageTypeDefOf.NeutralEvent);
             GatherFoodOrHunt();
+            return;
+        }
+
+        // Sprawdzenie dostępności surowego granitu
+        if (!CheckGraniteAvailability())
+        {
+            Messages.Message($"[DEBUG] {entrepreneur.Name} zbiera surowy granit!", MessageTypeDefOf.NeutralEvent);
+            GatherDroppedGranite();
             return;
         }
 
@@ -155,13 +180,30 @@ public class EntrepreneurAI : GameComponent
             CreateStorageZone(entrepreneur, FindSafeStorageLocation(map), map);
         }
 
-        if (entrepreneur.CurJob != null && entrepreneur.CurJob.def != JobDefOf.Wait)
+        AssignGraniteMining();
+    }
+
+    private bool CheckFoodAvailability()
+    {
+        foreach (var kvp in storageZones)
         {
-            Messages.Message($"[DEBUG] {entrepreneur.Name} jest już zajęty ({entrepreneur.CurJob.def.defName}).", MessageTypeDefOf.NeutralEvent);
-            return;
+            Pawn colonist = kvp.Key;
+            Zone_Stockpile storageZone = kvp.Value;
+
+            if (!colonist.inventory.innerContainer.Contains(ThingDef.Named(primaryCurrency)) &&
+                colonist.inventory.innerContainer.TotalStackCountOfDef(ThingDef.Named(primaryCurrency)) < foodLimit &&
+                colonist.inventory.innerContainer.TotalStackCountOfDef(ThingDef.Named(secondaryCurrency)) < foodLimit)
+            {
+                return false;
+            }
         }
 
-        AssignGraniteMining();
+        return true;
+    }
+
+    private bool CheckGraniteAvailability()
+    {
+        return rawGraniteWealth > 0;
     }
 
     private void GatherFoodOrHunt()
@@ -183,7 +225,7 @@ public class EntrepreneurAI : GameComponent
             ?? DefDatabase<ThingDef>.GetNamedSilentFail("BerryBush")
             ?? DefDatabase<ThingDef>.GetNamedSilentFail("Plant_Berries");
 
-        ThingDef berryDef = DefDatabase<ThingDef>.GetNamedSilentFail("RawBerries")
+        ThingDef berryDef = DefDatabase<ThingDef>.GetNamedSilentFail(primaryCurrency)
             ?? DefDatabase<ThingDef>.GetNamedSilentFail("Berries");
 
         if (berryBushDef == null || berryDef == null)
@@ -195,7 +237,7 @@ public class EntrepreneurAI : GameComponent
         // Sprawdzenie, ile jagód posiada przedsiębiorca
         int currentBerries = entrepreneur.inventory.innerContainer.TotalStackCountOfDef(berryDef);
 
-        if (currentBerries >= berryLimit)
+        if (currentBerries >= foodLimit)
         {
             Messages.Message($"[DEBUG] {entrepreneur.Name} ma już {currentBerries} jagód – przechodzi do kolejnego zadania!", MessageTypeDefOf.PositiveEvent);
             hasFood = true;
@@ -211,7 +253,7 @@ public class EntrepreneurAI : GameComponent
             Thing bush = berryBushes.RandomElement();
             Job harvestJob = new Job(JobDefOf.Harvest, bush);
 
-            if (entrepreneur.CurJob != null && entrepreneur.CurJob.targetA == bush)
+            if (entrepreneur.CurJob != null && entrepreneur.CurJob.targetA == bush && entrepreneur.CurJob.def == JobDefOf.Harvest)
             {
                 Messages.Message($"[DEBUG] {entrepreneur.Name} już zbiera jagody z krzaka w {bush.Position}.", MessageTypeDefOf.NeutralEvent);
                 return;
@@ -224,15 +266,15 @@ public class EntrepreneurAI : GameComponent
         {
             // Jeżeli nie ma krzaków jagodowych, to sprawdźmy, czy są zwierzęta do polowania
             List<Pawn> huntableAnimals = entrepreneur.Map.mapPawns.AllPawnsSpawned
-                .Where(p => p.def != null && (p.def.defName == "Hare" || p.def.defName == "Rat"))
+                .Where(p => p.def != null && (p.def.defName == "Hare" || p.def.defName == secondaryCurrency))
                 .ToList();
 
-            if (huntableAnimals.Any() && currentBerries < berryLimit)
+            if (huntableAnimals.Any() && currentBerries < foodLimit)
             {
                 Pawn target = huntableAnimals.RandomElement();
                 Job huntJob = new Job(JobDefOf.Hunt, target);
 
-                if (entrepreneur.CurJob != null && entrepreneur.CurJob.targetA == target)
+                if (entrepreneur.CurJob != null && entrepreneur.CurJob.targetA == target && entrepreneur.CurJob.def == JobDefOf.Hunt)
                 {
                     Messages.Message($"[DEBUG] {entrepreneur.Name} już poluje na {target.def.label}.", MessageTypeDefOf.NeutralEvent);
                     return;
@@ -347,23 +389,21 @@ public class EntrepreneurAI : GameComponent
     {
         int payment = salary;
 
-        if (processedGraniteWealth >= payment)
+        if (worker.inventory.innerContainer.Contains(ThingDef.Named(primaryCurrency)))
         {
-            processedGraniteWealth -= payment;
-            worker.inventory.innerContainer.TryAdd(
-                ThingMaker.MakeThing(ThingDef.Named(advancedCurrency), null),
-                payment
-            );
-            Messages.Message($"[DEBUG] {worker.Name} otrzymał {payment} {advancedCurrency}!", MessageTypeDefOf.PositiveEvent);
-        }
-        else if (rawGraniteWealth >= 1)
-        {
-            rawGraniteWealth -= 1;
             worker.inventory.innerContainer.TryAdd(
                 ThingMaker.MakeThing(ThingDef.Named(primaryCurrency), null),
-                GraniteConversionRate
+                payment
             );
-            Messages.Message($"[DEBUG] {worker.Name} otrzymał {GraniteConversionRate} {advancedCurrency} (z 1 {primaryCurrency})!", MessageTypeDefOf.PositiveEvent);
+            Messages.Message($"[DEBUG] {worker.Name} otrzymał {payment} {ThingDef.Named(primaryCurrency).label}!", MessageTypeDefOf.PositiveEvent);
+        }
+        else if (worker.inventory.innerContainer.Contains(ThingDef.Named(secondaryCurrency)))
+        {
+            worker.inventory.innerContainer.TryAdd(
+                ThingMaker.MakeThing(ThingDef.Named(secondaryCurrency), null),
+                payment
+            );
+            Messages.Message($"[DEBUG] {worker.Name} otrzymał {payment} {ThingDef.Named(secondaryCurrency).label}!", MessageTypeDefOf.PositiveEvent);
         }
     }
 }
