@@ -14,3 +14,10 @@ D:\Games\RimWorld\Mods\CapitalismVsSocialismV3\Source\obj\Debug\CapitalismVsSocj
 D:\Games\RimWorld\Mods\CapitalismVsSocialismV3\Source\obj\Debug\Capitali.D8406FCE.Up2Date
 D:\Games\RimWorld\Mods\CapitalismVsSocialismV3\Source\obj\Debug\CapitalismVsSocjalism.dll
 D:\Games\RimWorld\Mods\CapitalismVsSocialismV3\Source\obj\Debug\CapitalismVsSocjalism.pdb
+C:\Users\Administrator\Desktop\RepoCvS\CapitalismVsSocialism\Assemblies\CapitalismVsSocjalism.dll
+C:\Users\Administrator\Desktop\RepoCvS\CapitalismVsSocialism\Assemblies\CapitalismVsSocjalism.pdb
+C:\Users\Administrator\Desktop\RepoCvS\CapitalismVsSocialism\Source\obj\Debug\CapitalismVsSocjalism.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\RepoCvS\CapitalismVsSocialism\Source\obj\Debug\CapitalismVsSocjalism.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\RepoCvS\CapitalismVsSocialism\Source\obj\Debug\Capitali.D8406FCE.Up2Date
+C:\Users\Administrator\Desktop\RepoCvS\CapitalismVsSocialism\Source\obj\Debug\CapitalismVsSocjalism.dll
+C:\Users\Administrator\Desktop\RepoCvS\CapitalismVsSocialism\Source\obj\Debug\CapitalismVsSocjalism.pdb

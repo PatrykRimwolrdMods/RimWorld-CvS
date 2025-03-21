@@ -62,8 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CentralBank.cs" />
-    <Compile Include="EntrepreneurAI.cs" />
+    <Compile Include="Entrepreneur.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
