@@ -3,11 +3,63 @@
   "WorkspaceRootPath": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|d:\\games\\rimworld\\mods\\capitalismvssocialism\\source\\entrepreneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:entrepreneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\code\\entrepreneurmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:code\\entrepreneurmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|d:\\games\\rimworld\\mods\\capitalismvssocialism\\source\\code\\capitalismvssocjalismmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:code\\capitalismvssocjalismmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|d:\\games\\rimworld\\mods\\capitalismvssocialism\\source\\code\\customdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:code\\customdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\code\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:code\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\code\\entrepreneurinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:code\\entrepreneurinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\code\\entrepreneurevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:code\\entrepreneurevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|d:\\games\\rimworld\\mods\\capitalismvssocialism\\source\\code\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:code\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\code\\entrepreneurmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:code\\entrepreneurmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|d:\\games\\rimworld\\mods\\capitalismvssocialism\\source\\code\\dialog_trade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:code\\dialog_trade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\code\\tradesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:code\\tradesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\code\\propertymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:code\\propertymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\code\\colonistproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:code\\colonistproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\code\\entrepreneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ACC123C-D35D-4F61-8031-C9D73A9645A1}|CapitalismVsSocjalism.csproj|solutionrelative:code\\entrepreneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|CapitalismVsSocjalism||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\Enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\Enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,7 +69,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -25,16 +77,181 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Entrepreneur.cs",
-              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Entrepreneur.cs",
-              "RelativeDocumentMoniker": "Entrepreneur.cs",
-              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Entrepreneur.cs",
-              "RelativeToolTip": "Entrepreneur.cs",
-              "ViewState": "AgIAAGEFAAAAAAAAAAAAAHQFAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CapitalismVsSocjalismMod.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\CapitalismVsSocjalismMod.cs",
+              "RelativeDocumentMoniker": "Code\\CapitalismVsSocjalismMod.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\CapitalismVsSocjalismMod.cs",
+              "RelativeToolTip": "Code\\CapitalismVsSocjalismMod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T11:34:47.01Z",
+              "WhenOpened": "2025-03-21T13:56:26.609Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomDefOf.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\CustomDefOf.cs",
+              "RelativeDocumentMoniker": "Code\\CustomDefOf.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\CustomDefOf.cs",
+              "RelativeToolTip": "Code\\CustomDefOf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T13:47:31.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\Enums.cs",
+              "RelativeDocumentMoniker": "Code\\Enums.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\Enums.cs",
+              "RelativeToolTip": "Code\\Enums.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAIwEwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:40:24.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dialog_Trade.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\Dialog_Trade.cs",
+              "RelativeDocumentMoniker": "Code\\Dialog_Trade.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\Dialog_Trade.cs",
+              "RelativeToolTip": "Code\\Dialog_Trade.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAYwC0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:26:25.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EntrepreneurInterface.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\EntrepreneurInterface.cs",
+              "RelativeDocumentMoniker": "Code\\EntrepreneurInterface.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\EntrepreneurInterface.cs",
+              "RelativeToolTip": "Code\\EntrepreneurInterface.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwDwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:25:02.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EntrepreneurEvents.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\EntrepreneurEvents.cs",
+              "RelativeDocumentMoniker": "Code\\EntrepreneurEvents.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\EntrepreneurEvents.cs",
+              "RelativeToolTip": "Code\\EntrepreneurEvents.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwDEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:24:30.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EntrepreneurManager.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\EntrepreneurManager.cs",
+              "RelativeDocumentMoniker": "Code\\EntrepreneurManager.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\EntrepreneurManager.cs",
+              "RelativeToolTip": "Code\\EntrepreneurManager.cs",
+              "ViewState": "AgIAACsBAAAAAAAAAAAIwDABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:21:50.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EntrepreneurMod.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\EntrepreneurMod.cs",
+              "RelativeDocumentMoniker": "Code\\EntrepreneurMod.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\EntrepreneurMod.cs",
+              "RelativeToolTip": "Code\\EntrepreneurMod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:20:08.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HarmonyPatches.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\HarmonyPatches.cs",
+              "RelativeDocumentMoniker": "Code\\HarmonyPatches.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\HarmonyPatches.cs",
+              "RelativeToolTip": "Code\\HarmonyPatches.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:27:19.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PropertyManager.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\PropertyManager.cs",
+              "RelativeDocumentMoniker": "Code\\PropertyManager.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\PropertyManager.cs",
+              "RelativeToolTip": "Code\\PropertyManager.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwCQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:21:10.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TradeSystem.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\TradeSystem.cs",
+              "RelativeDocumentMoniker": "Code\\TradeSystem.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\TradeSystem.cs",
+              "RelativeToolTip": "Code\\TradeSystem.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:26:44.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Enum.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\Enum.cs",
+              "RelativeDocumentMoniker": "Code\\Enum.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\Enum.cs",
+              "RelativeToolTip": "Code\\Enum.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAmwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:21:28.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ColonistProperty.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\ColonistProperty.cs",
+              "RelativeDocumentMoniker": "Code\\ColonistProperty.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\ColonistProperty.cs",
+              "RelativeToolTip": "Code\\ColonistProperty.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwEIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:20:47.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Entrepreneur.cs",
+              "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\Entrepreneur.cs",
+              "RelativeDocumentMoniker": "Code\\Entrepreneur.cs",
+              "ToolTip": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\Code\\Entrepreneur.cs",
+              "RelativeToolTip": "Code\\Entrepreneur.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAIwFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T11:34:47.01Z"
             },
             {
               "$type": "Bookmark",
@@ -42,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "CapitalismVsSocjalism",
               "DocumentMoniker": "D:\\Games\\RimWorld\\Mods\\CapitalismVsSocialism\\Source\\CapitalismVsSocjalism.csproj",
               "RelativeDocumentMoniker": "CapitalismVsSocjalism.csproj",

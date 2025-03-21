@@ -21,3 +21,5 @@ C:\Users\Administrator\Desktop\RepoCvS\CapitalismVsSocialism\Source\obj\Debug\Ca
 C:\Users\Administrator\Desktop\RepoCvS\CapitalismVsSocialism\Source\obj\Debug\Capitali.D8406FCE.Up2Date
 C:\Users\Administrator\Desktop\RepoCvS\CapitalismVsSocialism\Source\obj\Debug\CapitalismVsSocjalism.dll
 C:\Users\Administrator\Desktop\RepoCvS\CapitalismVsSocialism\Source\obj\Debug\CapitalismVsSocjalism.pdb
+D:\Games\RimWorld\Mods\Assemblies\CapitalismVsSocjalism.dll
+D:\Games\RimWorld\Mods\Assemblies\CapitalismVsSocjalism.pdb
